@@ -499,7 +499,7 @@ section {
   align-items: center;
   text-align: center;
   height: 127vh;
-  position: relative;
+  position: relative; 
   padding: 20px;
   align-items: end;
 }
