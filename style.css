@@ -1,25 +1,30 @@
 body {
   font-size: 15px;
+  font-family: wise, sans-serif;
 }
 
 section {
   margin-top: 45px;
 }
 
-.nav {
-  position: fixed;
+header {
+  background-color: white;
+  /* height: 20vh;  */
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 25px 0px;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 63px;
+  width: 90%;
   background-color: white;
   z-index: 2;
+  margin: 0 auto;
+  gap: 431px;
 }
 
 .logoSide {
@@ -56,7 +61,6 @@ section {
   border-radius: 11px;
   padding: 3px 16px;
 }
-
 
 .show {
   position: relative;
@@ -96,7 +100,7 @@ section {
 .section1main {
   display: flex;
   width: 90%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   gap: 25px;
@@ -114,7 +118,9 @@ section {
   font-size: 80px;
   /* line-height: 0; */
   font-weight: bolder;
-  max-width: 416px;
+  max-width: 542px;
+  line-height: 0.93;
+  font-weight: 900;
 }
 
 .gapDiv {
@@ -133,7 +139,6 @@ section {
   border-radius: 11px;
   max-width: fit-content;
 }
-
 
 .leftSideCard {
   background-color: white;
@@ -208,7 +213,7 @@ section {
 .offer {
   display: flex;
   flex-direction: column;
-  gap: 10px
+  gap: 10px;
 }
 
 .size {
@@ -252,7 +257,7 @@ section {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 35px;
   font-size: 18px;
@@ -266,35 +271,35 @@ section {
   gap: 20px;
 }
 
-.sendMoney{
+.sendMoney {
   background: #9fe870;
-    padding: 11px 24px;
-    border: none;
-    border-radius: 20px;
-    width: 50%;
-    font-weight: 600;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 20px;
+  width: 50%;
+  font-weight: 600;
 }
 
-.compare{
+.compare {
   background: white;
-    padding: 11px 24px;
-    border: 1px solid black;
-    border-radius: 20px;  
-     width: 50%;
-     font-weight: 600;
+  padding: 11px 24px;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 50%;
+  font-weight: 600;
 }
 
 .compare:hover {
-  background-color: #9fe870 ;
+  background-color: #9fe870;
   border: none;
 }
 
 .greenBtn2 {
   background-color: #9fe870;
-    border: none;
-    border-radius: 11px;
-    padding: 3px 16px;
-    max-width: max-content;
+  border: none;
+  border-radius: 11px;
+  padding: 3px 16px;
+  max-width: max-content;
 }
 
 .card h5 {
@@ -437,8 +442,10 @@ section {
 
 .leftSideOfCard h1 {
   font-size: 80px;
-  max-width: 367px;
+  max-width: 471px;
   line-height: 1;
+  font-weight: 800;
+  line-height: 0.8;
 }
 
 .errowRighLeft {
@@ -499,7 +506,7 @@ section {
   align-items: center;
   text-align: center;
   height: 127vh;
-  position: relative; 
+  position: relative;
   padding: 20px;
   align-items: end;
 }
@@ -521,6 +528,8 @@ section {
   font-size: 80px;
   color: #9fe870;
   line-height: 1;
+  font-weight: 800;
+  line-height: 0.9;
 }
 
 .section7content p {
@@ -533,7 +542,7 @@ section {
   background-color: #9fe870;
   padding: 11px 24px;
   border: none;
-  border-radius: 10px;
+  border-radius: 28px;
   font-size: 17px;
   font-weight: 700;
 }
@@ -579,6 +588,11 @@ section {
   padding: 20px;
 }
 
+.h1 h1 {
+  font-weight: 800;
+  line-height: 0.8;
+}
+
 .Section8Background video {
   width: 100%;
   height: 130vh;
@@ -602,7 +616,7 @@ section {
 }
 
 .Section9Mainback {
-  background-color: wheat;
+  background-color: #ede3d1;
   margin-top: 0;
   padding-top: 25px;
 }
@@ -640,20 +654,16 @@ section {
   display: flex;
 } */
 
-
-
 .hindeli ul {
-  display: flex
-;
-    flex-wrap: wrap;
-    gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .showtheli ul {
-  display: flex
-;
-    flex-wrap: wrap;
-    gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .showtheli li {
@@ -676,28 +686,26 @@ section {
   width: 50px;
 }
 
-.testing{
+.testing {
   overflow-x: clip;
 }
-
-
 
 /* sectionlast
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////// */
 
-
 .mainsection {
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
+  /* width: 90%; */
+  /* margin: 0 auto; */
 }
 
 .topside {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex-basis: 25%;
 }
 
 .topside ul {
@@ -727,8 +735,22 @@ section {
 
 .bothomSide {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.bothomSide figure {
+  display: flex;
+  flex-basis: 25%;
+}
+
+.bothomSide figure img {
+  display: flex;
+  flex-basis: 25%;
+}
+
+.bothomSide div {
+  display: flex;
+  max-width: 25%;
+  flex-basis: 25%;
+  text-decoration: underline;
 }
 
 .bothomSide ul {
@@ -759,35 +781,33 @@ footer {
 
 @media only screen and (min-width: 1400px) {
   .section7main {
-            height: 75vh;
+    height: 75vh;
   }
 
-  .section7content{
-        height: 53vh;
+  .section7content {
+    height: 53vh;
   }
 
   .globle {
     top: -6%;
-}
+  }
 
   .rightSideCard {
     height: 67vh;
   }
 
-
   .Section8Background video {
     width: 100%;
     height: 80vh;
-}
+  }
 
-.Section8Background {
-      height: 67vh;
-}
+  .Section8Background {
+    height: 67vh;
+  }
 
-.Section8main{
+  .Section8main {
     height: 54vh;
-}
-
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -813,7 +833,6 @@ footer {
     height: 120vh;
   }
 
- 
   .globle {
     position: absolute;
     top: -11%;
@@ -944,7 +963,6 @@ footer {
     border-radius: 4%;
   }
 
-
   .hindeli {
     display: none;
   }
@@ -952,7 +970,7 @@ footer {
   .showtheli ul {
     gap: 26px;
     flex-direction: column;
-}
+  }
 
   .Section8Background {
     height: 90vh;
