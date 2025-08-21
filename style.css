@@ -298,7 +298,7 @@ header {
   background-color: #9fe870;
   border: none;
   border-radius: 11px;
-  padding: 3px 16px;
+  padding: 12px 16px;
   max-width: max-content;
 }
 
@@ -898,6 +898,13 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .navbar {
+    top: 0;
+    left: 19px;
+    gap: 1px;
+}
+
   .greenBtn1 {
     max-width: 100%;
   }
@@ -1095,4 +1102,17 @@ footer {
     font-size: 50px;
     max-width: 325px;
   }
+
+  .rightSidecontent {
+    flex-basis: 100%;
+    margin-top: 50px;
+}
+
+.lockimg figure {
+  display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+
 }
