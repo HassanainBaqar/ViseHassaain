@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   </head>
   <body>
     <header class="nav">
@@ -252,21 +254,60 @@
               <h1>For people going places</h1>
             </div>
             <div class="errowRighLeft">
-              <div class="botherrow">
+              <div class="botherrow swiper-button-prev-custom">
                 <i class="fa-solid fa-arrow-left"></i>
               </div>
-              <div class="botherrow">
+              <div class="botherrow swiper-button-next-custom">
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
             </div>
           </div>
-          <div class="rightSideCard">
-            <figure><img src="images/uk.d10318b2.svg" alt="" loading="lazy"/></figure>
-            <p>
-              "I use Wise to pay a mortgage in a different country each month.
-              Superb. That simple."
-            </p>
-            <div>Gerald on Trustpillot</div>
+
+          <div class="rightSideOfCard">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rightSideCard">
+                  <figure><img src="images/uk.d10318b2.svg" alt="" loading="lazy"/></figure>
+                  <p>
+                    "I use Wise to pay a mortgage in a different country each month.
+                    Superb. That simple."
+                  </p>
+                  <div>Gerald on Trustpillot</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rightSideCard">
+                  <figure><img src="images/uk.d10318b2.svg" alt="" loading="lazy"/></figure>
+                  <p>
+                    "I use Wise to pay a mortgage in a different country each month.
+                    Superb. That simple."
+                  </p>
+                  <div>Gerald on Trustpillot</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rightSideCard">
+                  <figure><img src="images/uk.d10318b2.svg" alt="" loading="lazy"/></figure>
+                  <p>
+                    "I use Wise to pay a mortgage in a different country each month.
+                    Superb. That simple."
+                  </p>
+                  <div>Gerald on Trustpillot</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rightSideCard">
+                  <figure><img src="images/uk.d10318b2.svg" alt="" loading="lazy"/></figure>
+                  <p>
+                    "I use Wise to pay a mortgage in a different country each month.
+                    Superb. That simple."
+                  </p>
+                  <div>Gerald on Trustpillot</div>
+                  </div>
+                </div>          
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -664,5 +705,29 @@
         <p>All investment services are provided by the respective Wise Assets <u> entity in your location.</u></p>
       </div>
     </footer>
+
+    
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script>
+    var swiper = new Swiper(".mySwiper", {
+      grabCursor: true,
+      effect: "creative",
+      navigation: {
+            prevEl: '.swiper-button-prev-custom',
+            nextEl: '.swiper-button-next-custom',
+        },
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: [0, 0, -300],
+        },
+        next: {
+          translate: ["100%", 0, 0],
+        },
+      },
+    });
+
+
+  </script>
   </body>
 </html>
