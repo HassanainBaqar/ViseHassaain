@@ -984,6 +984,18 @@ footer {
     max-width: 100%;
   }
 
+  .pairofbtn {
+    flex-wrap: wrap;
+}
+
+.compare {
+    width: 100%;
+}
+
+.sendMoney {
+    width: 100%;
+}
+
   .section2main {
     display: flex;
     flex-direction: column;
