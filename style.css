@@ -7,24 +7,39 @@ section {
   margin-top: 45px;
 }
 
+hr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 65px auto;
+  margin-bottom: 0px;
+}
+
 header {
-  background-color: white;
-  /* height: 20vh;  */
+      display: flex
+;
+    align-items: center;
+    background-color: white;
+    padding: 15px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    height: auto;
+    width: 100%;
+    justify-content: center;
 }
 
 .navbar {
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 0px;
-  position: fixed;
-  top: 0;
-  left: 63px;
-  width: 90%;
+  
   background-color: white;
   z-index: 2;
   margin: 0 auto;
-  gap: 431px;
+  /* gap: 467px; */
 }
 
 .logoSide {
@@ -98,13 +113,15 @@ header {
 /////////////////////////////////////////////////////// */
 
 .section1main {
-  display: flex;
-  width: 90%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  gap: 25px;
-  margin-top: 8%;
+  height: auto;
+    display: flex
+;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 25px;
+    margin-top: 10%;
 }
 
 .rightSidecontent {
@@ -115,7 +132,7 @@ header {
 }
 
 .rightSidecontent h1 {
-  font-size: 80px;
+  font-size: 72px;
   /* line-height: 0; */
   font-weight: bolder;
   max-width: 542px;
@@ -158,6 +175,11 @@ header {
   position: relative;
   z-index: 1;
   background-color: white;
+  flex-basis: 55%;
+}
+
+.section1mainCur{
+  width: 100%;
 }
 
 .absolute {
@@ -186,6 +208,26 @@ header {
   border: 1px solid;
   border-radius: 10px;
   padding: 12px 16px;
+}
+
+.flexDiv:focus-within {
+  border: 4px solid black;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  /* max-width: 100px; */
+  width: 100%;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .flexDiv div {
@@ -244,10 +286,17 @@ header {
 }
 
 .lightblue {
-  max-width: 339px;
+  max-width: 100%;
   background-color: lightblue;
   padding: 8px;
   border-radius: 5px;
+  font-size: 17px;
+}
+
+.gap{
+  display: flex;
+  flex-direction: column;
+  gap: 5px
 }
 
 /* ////////////Section 2 ///////////////////////////////////////////////
@@ -262,6 +311,26 @@ header {
   gap: 35px;
   font-size: 18px;
   font-weight: lighter;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  gap: 20px;
+}
+
+
+.card1 div {
+    display: flex
+;
+border: 1px solid lightgray;
+    background-color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -444,11 +513,11 @@ header {
 }
 
 .leftSideOfCard h1 {
-  font-size: 80px;
-  max-width: 471px;
-  line-height: 1;
-  font-weight: 800;
-  line-height: 0.8;
+  font-size: 67px;
+    max-width: 471px;
+    line-height: 1;
+    font-weight: 800;
+    line-height: 0.8;
 }
 
 .errowRighLeft {
@@ -501,8 +570,9 @@ header {
 }
 
 .rightSideCard p {
-  font-size: 24px;
-  font-weight: bold;
+      font-size: 23px;
+    font-weight: bold;
+    line-height: 1.4;
 }
 
 .rightSideCard figure img {
@@ -578,7 +648,7 @@ header {
 .Section8Background {
   position: relative;
   width: 100%;
-  height: 120vh;
+  height: auto;
   object-fit: cover;
 }
 
@@ -586,7 +656,7 @@ header {
   display: flex;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   background-color: #ffffff8f;
   text-align: center;
   justify-content: center;
@@ -618,7 +688,7 @@ header {
 
 .Section8Background video {
   width: 100%;
-  height: 130vh;
+  height: auto;
 }
 
 .Section8main div figure img {
@@ -641,7 +711,7 @@ header {
 .Section9Mainback {
   background-color: #ede3d1;
   margin-top: 0;
-  padding-top: 25px;
+  padding: 55px 0px;
 }
 
 .Section9Main {
@@ -746,6 +816,7 @@ header {
 
 .changeDirection {
   display: flex;
+  font-size: 25px;
 }
 
 .Sectionlast {
@@ -765,8 +836,11 @@ header {
 }
 
 .bothomSide figure img {
-  display: flex;
-  flex-basis: 25%;
+  display: flex
+;
+    flex-basis: 25%;
+    width: 75px;
+    height: 19px;
 }
 
 .bothomSide div {
@@ -821,15 +895,15 @@ footer {
 
   .Section8Background video {
     width: 100%;
-    height: 80vh;
+    height: auto;
   }
 
   .Section8Background {
-    height: 67vh;
+    height: auto;
   }
 
   .Section8main {
-    height: 54vh;
+    height: 75%;
   }
 }
 
@@ -853,7 +927,7 @@ footer {
   .Section8Background video {
     width: 100%;
     object-fit: cover;
-    height: 120vh;
+    height: auto;
   }
 
   .globle {
@@ -902,7 +976,7 @@ footer {
   .navbar {
     top: 0;
     left: 19px;
-    gap: 1px;
+    /* gap: 286px; */
 }
 
   .greenBtn1 {
@@ -948,7 +1022,7 @@ footer {
     display: flex;
     flex-basis: 100%;
     gap: 56px;
-    height: 79vh;
+    height: 59vh;
   }
 
   .rightSideOfCard {
@@ -956,7 +1030,7 @@ footer {
 ;
     /* position: relative; */
     width: 100%;
-    height: 95vh;
+    height: 70vh;
 }
 
   .section7main {
@@ -994,7 +1068,7 @@ footer {
 
   .h1 {
     font-size: 30px;
-    height: 75vh;
+    /* height: 75vh; */
     gap: 15px;
   }
 
@@ -1005,7 +1079,7 @@ footer {
   }
 
   .Section8main {
-    height: 71vh;
+    height: auto;
     gap: 15px;
     border-radius: 4%;
   }
@@ -1099,8 +1173,8 @@ footer {
   }
 
   .rightSidecontent h1 {
-    font-size: 50px;
-    max-width: 325px;
+    font-size: 45px;
+        max-width: 443px;
   }
 
   .rightSidecontent {
@@ -1113,6 +1187,36 @@ footer {
 ;
     justify-content: center;
     align-items: center;
+}
+
+.Section9Mainback {
+    background-color: #ede3d1;
+    margin-top: 0;
+    padding-top: 24px;
+}
+
+.errowRighLeft {
+    display: none;
+}
+
+.bothomSide div{
+  display: none;
+}
+
+.card1 {
+    width: 100%;
+}
+
+.rightSideCard p {
+    font-size: 15px;
+}
+
+.rightSideCard div {
+    font-size: 10px;
+}
+
+.rightSideCard figure img {
+    width: 100px;
 }
 
 }
